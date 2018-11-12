@@ -21,7 +21,7 @@ namespace PrizeDraw
             var inputdata = input.Split
             (
                 new[] {Environment.NewLine},
-                StringSplitOptions.None
+                StringSplitOptions.RemoveEmptyEntries
             );
 
             var duration = int.Parse(inputdata[0]);
@@ -30,7 +30,7 @@ namespace PrizeDraw
             for (var i = 1; i < inputdata.Length; i++)
             {
                 var line = inputdata[i];
-                var orderarray = line.Split(' ');
+                var orderarray = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
                 var numorders = int.Parse(orderarray[0]);
                 var orderamounts = new List<int>();
@@ -39,7 +39,7 @@ namespace PrizeDraw
                 {
                     orderamounts.Add
                     (
-                        int.Parse(orderarray[i])
+                        int.Parse(orderarray[j])
                     );
                 }
 
