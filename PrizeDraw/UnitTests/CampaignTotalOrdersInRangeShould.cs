@@ -1,5 +1,5 @@
 ﻿using Moq;
-using PrizeDraw;
+using PrizeDraw.Interfaces;
 using PrizeDraw.Validation;
 using Xunit;
 namespace UnitTests

@@ -3,6 +3,7 @@ using Moq;
 using PrizeDraw;
 using PrizeDraw.CompositionRoot;
 using PrizeDraw.Interfaces;
+using PrizeDraw.Models;
 using PrizeDraw.Validation;
 using System;
 using System.Collections.Generic;

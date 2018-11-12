@@ -1,4 +1,5 @@
 ﻿using PrizeDraw;
+using PrizeDraw.Models;
 using System.Collections.Generic;
 using Xunit;
 namespace UnitTests

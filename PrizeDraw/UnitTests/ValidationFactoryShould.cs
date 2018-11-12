@@ -1,4 +1,5 @@
-﻿using PrizeDraw;
+﻿using PrizeDraw.Interfaces;
+using PrizeDraw.Models;
 using PrizeDraw.Validation;
 using System.Collections.Generic;
 using System.Linq;

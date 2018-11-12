@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrizeDraw.Interfaces;
+using System;
 
 namespace PrizeDraw.Validation
 {

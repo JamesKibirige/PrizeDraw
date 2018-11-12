@@ -1,4 +1,6 @@
-﻿namespace PrizeDraw.Validation
+﻿using PrizeDraw.Interfaces;
+
+namespace PrizeDraw.Validation
 {
     public class CampaignTotalOrdersInRange: Validation
     {

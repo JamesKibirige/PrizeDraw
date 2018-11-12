@@ -1,4 +1,5 @@
 ﻿using PrizeDraw.Interfaces;
+using PrizeDraw.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;

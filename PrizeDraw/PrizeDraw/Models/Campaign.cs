@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using PrizeDraw.Interfaces;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace PrizeDraw
+namespace PrizeDraw.Models
 {
     public class Campaign : ICampaign
     {

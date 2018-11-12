@@ -1,4 +1,4 @@
-﻿using PrizeDraw;
+﻿using PrizeDraw.Models;
 using PrizeDraw.Validation;
 using System.Collections.Generic;
 using Xunit;

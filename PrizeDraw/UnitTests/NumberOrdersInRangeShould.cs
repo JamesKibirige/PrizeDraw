@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using PrizeDraw;
+using PrizeDraw.Models;
 using PrizeDraw.Validation;
 using System;
 using System.Collections.Generic;
