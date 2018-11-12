@@ -11,7 +11,7 @@ namespace PrizeDraw.CompositionRoot
         {
             try
             {
-                using (StreamReader reader = new StreamReader(Console.OpenStandardInput(), Console.InputEncoding))
+                using (var reader = new StreamReader(Console.OpenStandardInput(), Console.InputEncoding))
                 {
                     var prizeDrawApplication = new Application
                         (
