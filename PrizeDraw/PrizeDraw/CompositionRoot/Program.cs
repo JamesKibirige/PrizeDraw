@@ -1,7 +1,7 @@
-﻿using PrizeDraw.Validation;
-using System;
-using System.IO;
+﻿using System;
 using System.Threading.Tasks;
+using Lamar;
+using PrizeDraw.IoC;
 
 namespace PrizeDraw.CompositionRoot
 {
@@ -11,19 +11,18 @@ namespace PrizeDraw.CompositionRoot
         {
             try
             {
-                using (var reader = new StreamReader(Console.OpenStandardInput(), Console.InputEncoding))
-                {
-                    var prizeDrawApplication = new Application
-                        (
-                            new CampaignReader(reader),
-                            new ValidationFactory(),
-                            new Validator(),
-                            new PrizeMoneyCalculator()
-                        );
+                //Register
+                var container = new Container
+                (
+                    new ApplicationRegistry()
+                );
 
-                    await prizeDrawApplication.Run();
-                }
+                //Resolve
+                var prizeDrawApplication = container.GetInstance<Application>();
+                await prizeDrawApplication.Run();
 
+                //Release
+                container.Dispose();
             }
             catch (Exception e)
             {

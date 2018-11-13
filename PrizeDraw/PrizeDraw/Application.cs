@@ -1,9 +1,9 @@
-﻿using PrizeDraw.Interfaces;
-using System;
+﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+using PrizeDraw.Interfaces;
 
-namespace PrizeDraw.CompositionRoot
+namespace PrizeDraw
 {
     public class Application : IApplication
     {
